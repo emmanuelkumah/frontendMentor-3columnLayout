@@ -23,10 +23,11 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 140px;
+  margin-bottom: 100px;
 }
 .column {
   float: left;
-  width: 20%;
+  width: 24%;
 }
 .row::after {
   content: "";
@@ -48,7 +49,12 @@ body {
   border-bottom-right-radius: 5px;
 }
 img {
-  width: 30%;
+  width: 25%;
+}
+.btn-luxury,
+.btn-sedans,
+.btn-suvs {
+  font-weight: 700;
 }
 .btn-sedans {
   color: var(--brightOrange);
@@ -69,11 +75,11 @@ img {
   .column h1 {
     text-transform: uppercase;
     font-family: "Big Shoulders Display", cursive;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     padding-top: 20px;
   }
   .column p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     padding-top: 20px;
     padding-bottom: 50px;
     padding-right: 10px;
@@ -85,6 +91,6 @@ img {
     outline: none;
     border-radius: 20px;
     background-color: var(--veryLightGray);
-    padding: 10px 20px;
+    padding: 15px 30px;
   }
 }
