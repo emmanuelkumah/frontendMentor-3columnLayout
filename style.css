@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 * {
   box-sizing: border-box;
@@ -16,6 +16,7 @@ body {
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
   height: auto;
+  color: var(--veryLightGray);
 }
 .row {
   display: flex;
@@ -26,10 +27,64 @@ body {
 .column {
   float: left;
   width: 20%;
-  border: 1px solid red;
 }
 .row::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.sedans {
+  background-color: var(--brightOrange);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.suvs {
+  background-color: var(--darkCyan);
+}
+.luxury {
+  background-color: var(--veryDarkCyan);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+img {
+  width: 30%;
+}
+.btn-sedans {
+  color: var(--brightOrange);
+}
+.btn-suvs {
+  color: var(--darkCyan);
+}
+.btn-luxury {
+  color: var(--veryDarkCyan);
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  .column {
+    padding: 40px;
+  }
+  .column h1 {
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 1.8rem;
+    padding-top: 20px;
+  }
+  .column p {
+    font-size: 0.7rem;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-right: 10px;
+    line-height: 1.7;
+    color: var(--whiteTransparent);
+  }
+  button {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: var(--veryLightGray);
+    padding: 10px 20px;
+  }
 }
