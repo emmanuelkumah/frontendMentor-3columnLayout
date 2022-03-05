@@ -18,57 +18,35 @@ body {
   height: auto;
   color: var(--veryLightGray);
 }
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 140px;
-  margin-bottom: 100px;
-}
-.column {
-  float: left;
-  width: 24%;
-}
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.sedans {
-  background-color: var(--brightOrange);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
+/* background colors */
 .suvs {
   background-color: var(--darkCyan);
 }
+.sedans {
+  background-color: var(--brightOrange);
+}
 .luxury {
   background-color: var(--veryDarkCyan);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-img {
-  width: 25%;
-}
-.btn-luxury,
-.btn-sedans,
-.btn-suvs {
-  font-weight: 700;
-}
-.btn-sedans {
-  color: var(--brightOrange);
-}
-.btn-suvs {
-  color: var(--darkCyan);
-}
-.btn-luxury {
-  color: var(--veryDarkCyan);
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-  /* Styles */
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+    margin-bottom: 100px;
+  }
+  .column {
+    float: left;
+    width: 24%;
+  }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   .column {
     padding: 40px;
   }
@@ -92,5 +70,53 @@ img {
     border-radius: 20px;
     background-color: var(--veryLightGray);
     padding: 15px 30px;
+  }
+  .sedans {
+    background-color: var(--brightOrange);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .luxury {
+    background-color: var(--veryDarkCyan);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  img {
+    width: 25%;
+  }
+  .btn-luxury,
+  .btn-sedans,
+  .btn-suvs {
+    font-weight: 700;
+  }
+  .btn-sedans {
+    color: var(--brightOrange);
+  }
+  .btn-suvs {
+    color: var(--darkCyan);
+  }
+  .btn-luxury {
+    color: var(--veryDarkCyan);
+  }
+}
+
+/* mobile view */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .row {
+    margin: 60px 30px 60px 30px;
+  }
+  .column {
+    width: 100%;
+  }
+  .sedans {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .luxury {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
